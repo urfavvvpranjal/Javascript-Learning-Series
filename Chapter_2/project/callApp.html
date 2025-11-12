@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Note Card Stack</title>
+  <link rel="stylesheet" href="callApp.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side Buttons -->
+    <div class="side-buttons left">
+      <button class="icon-btn" id="addBtn">+</button>
+      <button class="icon-btn">↑</button>
+      <button class="icon-btn">↓</button>
+    </div>
+
+    <!-- Main Card Stack -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg" alt="profile" class="avatar">
+      <h2>Fatima Uma</h2>
+      <div class="info">
+        <div>
+          <p>Home town</p>
+          <strong>Singapore</strong>
+        </div>
+        <div>
+          <p>Bookings</p>
+          <strong>3 times</strong>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="call">📞 Call</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+
+    <!-- Right Side Color Dots -->
+    <div class="side-buttons right">
+      <span class="dot black"></span>
+      <span class="dot purple"></span>
+      <span class="dot orange"></span>
+      <span class="dot teal"></span>
+    </div>
+  </div>
+  <!-- Hidden Form Modal -->
+  <div class="callform" id="callform">
+    <div class="form-card">
+      <h2>New Call</h2>
+
+      <label>Image URL</label>
+      <input type="text" placeholder="https://example.com/photo.jpg">
+
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name">
+
+      <label>Home Town</label>
+      <input type="text" placeholder="Enter home town">
+
+      <label>Purpose</label>
+      <input type="text" placeholder="e.g., Quick appointment note">
+
+      <label>Category</label>
+      <div class="categories">
+        <label><input type="checkbox"> <span class="tag red">Emergency</span></label>
+        <label><input type="checkbox"> <span class="tag orange">Important</span></label>
+        <label><input type="checkbox"> <span class="tag purple">Urgent</span></label>
+        <label><input type="checkbox"> <span class="tag gray">No Rush</span></label>
+      </div>
+
+      <div class="buttons">
+        <button class="create">Create Note</button>
+        <button class="close" id="closeBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const addBtn = document.getElementById("addBtn");
+    const callform = document.getElementById("callform");
+    const closeBtn = document.getElementById("closeBtn");
+
+    addBtn.addEventListener("click", () => {
+      callform.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      callform.classList.remove("show");
+    });
+  </script>
+</body>
+</html>
