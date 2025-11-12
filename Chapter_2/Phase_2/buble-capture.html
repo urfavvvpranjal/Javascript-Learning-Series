@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: #222;
+            color: white;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .blue{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 10px;
+        }
+        .red{
+            height: 70%;
+            width: 70%;
+            background-color: red;
+            border-radius: 10px;
+        }
+        .green{
+            height: 70%;
+            width: 70%;
+            background-color: green;
+            border-radius: 10px;
+        }
+        button{
+            background-color: #555;
+            border-radius: 5px;
+            padding: 12px 22px;
+            margin: 4px;
+            border: none;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            transition: 
+                transform 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+                background 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+                box-shadow 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+            
+        }
+        button:active{
+            background: #444;
+            transform: scale(1.09);
+            box-shadow: 0 3px 10px rgba(23, 22, 22, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <div class="red"> 
+            <div class="green">
+                <button>click me</button>
+            </div>
+        </div>
+    </div>
+    <script src="buble-capture.js"></script>
+</body>
+</html>

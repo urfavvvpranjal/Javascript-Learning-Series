@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            background-color: #222;
+        }
+        .input{
+            margin: 100px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            transition: 
+            transform  0.2s cubic-bezier(0.19, 1, 0.22, 1);
+            user-select: none;
+        }
+        input:hover{
+            border: none;
+            transform: scale(1.04);
+        }
+        input:active{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class ="input">
+        <input type="text" placeholder="user-name">
+        <div> <h1>character left = <span class="count">20</span></h1></div>
+    </div>
+    
+    <script src="characterCounter.js"></script>
+</body>
+</html>

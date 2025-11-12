@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 20px;
+            background-color: #212020;
+        }
+        input{
+            display: block;
+            padding: 5px;
+            color: aliceblue;
+            background-color: #000000;
+            border-radius: 8px;
+        }
+        .card{
+            display: inline-block;
+            margin: 3px;
+            padding: 15px;
+            height: auto;
+            width: 250px;
+            color: rgb(72, 63, 63);
+            border: 2px solid #3f3b3b;
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+        .card:hover{
+            background-color: #171616;
+        }
+        .card h3{
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            font-size: larger;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ; 
+        }
+        .card h5{
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        .card p{
+            margin-top: 3px;
+        }
+        .card h3, .card h5, .card p {
+            margin: 5px 0;
+            text-align: center; /* optional, for alignment */
+        }
+        .profile_pic{
+            display: block;
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;  
+            overflow: hidden;
+        }
+        .profile_pic img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #submit{
+            background-color: #212020;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <input type="text" placeholder="profile_pic">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="info">
+            <input type="text" placeholder="occupation">
+            <input type="submit" id="submit" style="margin: 5px;">
+        </form>
+    </div>
+    <script src="form2.js"></script>
+</body>
+</html>

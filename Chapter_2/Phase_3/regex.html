@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            color: #666;
+            background-color: #222;
+        }
+        input{
+            padding: 12px 22px;
+            color: black;
+            background-color: #666;
+            border-radius: 20px;
+        }
+        input::placeholder{
+            color: #222;
+        }
+        select{
+            padding: 12px 22px;
+            border-radius: 20px; 
+            background-color: #666;
+        }
+        select::placeholder{
+            color: #222;
+        }
+        .form{
+            height: 45%;
+            width: 40%;
+            padding: 50px;
+            border-radius: 20px;
+            background-color: #333;
+        }
+        .hide_name{
+            padding: 10px;
+            color: red;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form>
+            <input type="name" id = "name" placeholder="name">
+            <div class="hide_name">
+                <br>
+                <small>your name should be greater than 2 characters</small>
+            </div>
+            <br><br>
+            <input type="email" placeholder="email">
+            <br><br>
+            <input type="password" placeholder="password">
+            <br><br>
+            <select>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+            <br><br>
+            <input type="text" placeholder="tell us about yourself">
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <script src="regex.js"></script>
+</body>
+</html>

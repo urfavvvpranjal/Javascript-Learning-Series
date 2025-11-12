@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            
+        }
+        body{
+            overflow: hidden;
+            position: relative;
+            background-color: #0d1117;
+        }
+        .abc{
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: aqua;
+            transition: 
+                transform 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+                background 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+                box-shadow 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .abc:hover{
+           background: #1de9b6;
+           transform: scale(1.08);
+           box-shadow: 0 8px 20px rgba(29, 233, 182, 0.4);  
+        }
+        .abc:hover:active{
+            box-shadow: 0 3px 10px rgba(29, 233, 182, 0.3);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class ="abc">
+
+    </div>
+    <script src="mousemove.js"></script>
+</body>
+</html>
